@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4897622b5af24cf8a24cae074a86edab" Name="Diagram1">
+        <EntityTypeShape EntityType="Medripple_echModel.AccessEntity" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.AccessList" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.AccessResolution" Width="1.5" PointX="3" PointY="39.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.AccessTier" Width="1.5" PointX="3" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Allergy" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.App" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.App_diagnostic" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.App_doc" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.App_hospital" Width="1.5" PointX="24.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.bankinfo" Width="1.5" PointX="8.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.BankInfoContactDetail" Width="1.5" PointX="24.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.BankInfoTerm" Width="1.5" PointX="10.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.BasicHealthDetail" Width="1.5" PointX="26.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.bot_table" Width="1.5" PointX="22.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.CityMaster" Width="1.5" PointX="26.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ClinicalDoctor" Width="1.5" PointX="22" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ClinicalResearchDetail" Width="1.5" PointX="19.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ClinicSpecialitiesMaster" Width="1.5" PointX="8.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ConnectRelationMaster" Width="1.5" PointX="0.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ConnectTransactions_api" Width="1.5" PointX="3" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.CorporateDetail" Width="1.5" PointX="28.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.CountryMaster" Width="1.5" PointX="22.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Customer" Width="1.5" PointX="20" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DependentTbl" Width="1.5" PointX="27.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DetailAccessCount" Width="1.5" PointX="27.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.diagnosticCenterHealthCheckUpPlan" Width="1.5" PointX="10.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiagnosticCentresContactDetail" Width="1.5" PointX="22.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiagnosticCentresDetail" Width="1.5" PointX="29.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiagnosticMaster" Width="1.5" PointX="0.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiagnosticServicesMaster" Width="1.5" PointX="29.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiseaseMaster" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Disease" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiseasesOther" Width="1.5" PointX="29.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiseaseToDepartment1" Width="1.5" PointX="29.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorsDetail" Width="1.5" PointX="17.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorsDetail1" Width="1.5" PointX="29.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorsDetailaddr" Width="1.5" PointX="30.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorsVisit" Width="1.5" PointX="5.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorWorkDetail" Width="1.5" PointX="20" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Drug" Width="1.5" PointX="30.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.EHRReportDocument" Width="1.5" PointX="3" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.example" Width="1.5" PointX="31.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.GroupConnection" Width="1.5" PointX="6" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.GroupConnectionTransaction" Width="1.5" PointX="6" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.GroupMember" Width="1.5" PointX="6" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.GroupMessage" Width="1.5" PointX="3.75" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.GroupMessageTransaction" Width="1.5" PointX="6" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Group" Width="1.5" PointX="3.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.healthnewscontent" Width="1.5" PointX="31.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalConsultant" Width="1.5" PointX="15" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalFacilityMaster" Width="1.5" PointX="10.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Hospitalization" Width="1.5" PointX="31.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalsDetail" Width="1.5" PointX="12.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalVisitingConsultant" Width="1.5" PointX="15" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Immunization" Width="1.5" PointX="31.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.InsurancePlan" Width="1.5" PointX="31.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.InterventionMaster" Width="1.5" PointX="24.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Ipaddress_table" Width="1.5" PointX="26.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.LabReport" Width="1.5" PointX="31.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Medication" Width="1.5" PointX="32.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.MRCompanyHierarchy" Width="1.5" PointX="33.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.OrderDetail" Width="1.5" PointX="22.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.OrganizationFacility" Width="1.5" PointX="33.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.OrganizationInfo" Width="1.5" PointX="12.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.PartnerSiteDetail" Width="1.5" PointX="33.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.PatientDisease" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.PersonalDetail" Width="1.5" PointX="14.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Procedure_Master" Width="1.5" PointX="33.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ProcedureMaster" Width="1.5" PointX="33.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Product" Width="1.5" PointX="25.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ProductBrand" Width="1.5" PointX="20" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ProductCategory" Width="1.5" PointX="17.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ProviderPatientDetail_api" Width="1.5" PointX="33.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ProviderPersonnel" Width="1.5" PointX="33.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ProviderReferral" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Query_Pointsdetail" Width="1.5" PointX="10" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryPatient_AskQuery" Width="1.5" PointX="27.25" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryPatient_ReplyQuery" Width="1.5" PointX="22.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryPatientInfo" Width="1.5" PointX="25" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryPatientTreatmentCity" Width="1.5" PointX="34.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryPatToComReply" Width="1.5" PointX="24.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryPatToPatReply" Width="1.5" PointX="26.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryPoint" Width="1.5" PointX="7.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryProviderInfo" Width="1.5" PointX="35.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.RefAppTransactions_api" Width="1.5" PointX="10.5" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ReferralAdded_api" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ReferralAppointment_api" Width="1.5" PointX="8.25" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ReferralConnect_api" Width="1.5" PointX="3" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ReferralEntityMaster" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ReferralRequestDetail_api" Width="1.5" PointX="5.25" PointY="28.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ReferralStatusMaster" Width="1.5" PointX="0.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ReferralTransactions_api" Width="1.5" PointX="8.25" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.review_doctor" Width="1.5" PointX="5.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.review_hospital" Width="1.5" PointX="35.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.sample" Width="1.5" PointX="35.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.SkillsMaster" Width="1.5" PointX="35.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.SkillsMaster1" Width="1.5" PointX="35.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.SpecialityClinicsCentreDetail" Width="1.5" PointX="35.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.SpecializationMaster" Width="1.5" PointX="35.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.sysdiagram" Width="1.5" PointX="35.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabchkdiagId" Width="1.5" PointX="36.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.TabchkDocid" Width="1.5" PointX="7.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tbl_providerlogindetail" Width="1.5" PointX="9.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tblRelationMaster_api" Width="1.5" PointX="16.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.UploadMember_api" Width="1.5" PointX="35.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.userallergy" Width="1.5" PointX="37.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.UserInfo" Width="1.5" PointX="37.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.BankWorkingHour" Width="1.5" PointX="37.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.BLOG_T" Width="1.5" PointX="37.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Book_Category" Width="1.5" PointX="37.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.BookAppointment" Width="1.5" PointX="37.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.CityMaster1" Width="1.5" PointX="37.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Cme_description" Width="1.5" PointX="37.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.copy_HospitalProcedures" Width="1.5" PointX="37.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.copyHospitalProcedure" Width="1.5" PointX="18.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Corporate" Width="1.5" PointX="31.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Coupons4Pat" Width="1.5" PointX="38.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.CurrentCondition" Width="1.5" PointX="39.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.dept_hosrating" Width="1.5" PointX="39.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DIAGNOSTIC_TESTMASTER" Width="1.5" PointX="7.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiagnosticCentreService" Width="1.5" PointX="9.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiagnosticCentreWorkingHour" Width="1.5" PointX="39.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DiseaseToDepartment" Width="1.5" PointX="14.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.docdetail" Width="1.5" PointX="39.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.docsecret" Width="1.5" PointX="39.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Doctor_Ref" Width="1.5" PointX="39.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorCategory" Width="1.5" PointX="20" PointY="26.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorsClinicTiming" Width="1.5" PointX="20" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorSkill" Width="1.5" PointX="20" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.doctorsubscription" Width="1.5" PointX="24.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorsVisitingDetail" Width="1.5" PointX="20" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorsVisitingDetail1" Width="1.5" PointX="39.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.DoctorWorkDetail1" Width="1.5" PointX="26.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Ebook_Detail" Width="1.5" PointX="39.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Emp_offer" Width="1.5" PointX="39.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.FellowPatientQuery" Width="1.5" PointX="39.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.healthexchange" Width="1.5" PointX="28.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalContactPersonDetail" Width="1.5" PointX="15" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalDiagnostic" Width="1.5" PointX="15" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalFacility" Width="1.5" PointX="39.75" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalIndoorService" Width="1.5" PointX="15" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalOffer" Width="1.5" PointX="41.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalProcedure" Width="1.5" PointX="41.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.HospitalsPackageDetail" Width="1.5" PointX="15" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.InsuCitylist" Width="1.5" PointX="41.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.InsuranceTiesUpMaster" Width="1.5" PointX="41.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.job_board" Width="1.5" PointX="41.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.MIS_Table" Width="1.5" PointX="41.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Newallergy" Width="1.5" PointX="41.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.newsletter_unsubscription" Width="1.5" PointX="41.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.opddemo" Width="1.5" PointX="41.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.OpdTiming" Width="1.5" PointX="15" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.OrganizationContactPersonDetail" Width="1.5" PointX="41.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.paid_specialist" Width="1.5" PointX="41.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ParameterSetting" Width="1.5" PointX="41.75" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Patient_Speak" Width="1.5" PointX="0.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Patientfeedback" Width="1.5" PointX="2.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Patinsudetail" Width="1.5" PointX="4.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.PDiscount" Width="1.5" PointX="6.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.PGFamialy" Width="1.5" PointX="16.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.PGIndividual" Width="1.5" PointX="18.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryAreaMaster" Width="1.5" PointX="30.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.QueryProcMst" Width="1.5" PointX="32.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.SuperSpecialityOPDTiming" Width="1.5" PointX="34.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.TabChkCity" Width="1.5" PointX="36.75" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabDoctorCategory" Width="1.5" PointX="43.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabDoctorsClinicTiming" Width="1.5" PointX="43.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabdoctorsdetail" Width="1.5" PointX="43.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabDoctorSkill" Width="1.5" PointX="8.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabDoctorsVisitingDetail" Width="1.5" PointX="20.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabDoctorWorkDetail" Width="1.5" PointX="43.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tabQueryProviderInfo" Width="1.5" PointX="22.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tbl_Bot" Width="1.5" PointX="43.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.temphoscon" Width="1.5" PointX="43.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempp" Width="1.5" PointX="43.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempq" Width="1.5" PointX="10.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempqpinfo" Width="1.5" PointX="24.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempquerypatient_ask" Width="1.5" PointX="38.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempquerypatientinfo" Width="1.5" PointX="40.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempquerypatientReply" Width="1.5" PointX="45.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempquerypatientTreat" Width="1.5" PointX="45.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tempr" Width="1.5" PointX="45.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.test" Width="1.5" PointX="45.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.TestTable" Width="1.5" PointX="45.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tquerypatient_askquery" Width="1.5" PointX="45.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.tquerypatienttreatmentcity" Width="1.5" PointX="30.75" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.Transaction_detail" Width="1.5" PointX="45.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.viewdoctor" Width="1.5" PointX="45.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.AccessMatrix" Width="1.5" PointX="45.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.provider" Width="1.5" PointX="45.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ProvidersHierarchy" Width="1.5" PointX="12.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.SearchProduct" Width="1.5" PointX="32.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.view_Ansgridview" Width="1.5" PointX="34.75" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.View_QueryPackage" Width="1.5" PointX="47.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Medripple_echModel.ViewDoctorsdetail" Width="1.5" PointX="47.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="Medripple_echModel.FK_AccessEntities_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_AccessList_AccessEntities" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_AccessList_AccessResolution" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_AccessList_AccessTier" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.Fk_ClinicalDoctors_id" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralConnect_api_ConnectRelationMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralConnect_api_ConnectRelationMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ConnectTransactions_api_ReferralConnect_api" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ConnectTransactions_api_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ConnectTransactions_api_ReferralEntityMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ConnectTransactions_api_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ConnectTransactions_api_ReferralStatusMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.fk_vccntry_qptinfo" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_OrdersDetails_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_PatientDisease_DiseaseMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.Fk_doccat_docid" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.Fk_docclinic_docid" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.Fk_docskills_docid" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.Fk_docvis_docid" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.Fk_docworkdetail_docid" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_EHRReportDocuments_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupConnections_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupConnections_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupConnectionTransactions_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupConnectionTransactions_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupConnectionTransactions_ReferralStatusMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupConnectionTransactions_ReferralStatusMaster2" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupMembers_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupMembers_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupMessages_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupMessageTransactions_GroupMessages" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupMessageTransactions_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupMessageTransactions_ReferralEntityMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_GroupMessageTransactions_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_HospitalConsultants_HospitalsDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_HospitalContactPersonDetail_HospitalsDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_HospitalDiagnostics_HospitalsDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_HospitalIndoorServices_HospitalsDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_HospitalsPackageDetail_HospitalsDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_HospitalVisitingConsultants_HospitalsDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_OpdTiming_HospitalsDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_OrderDetails_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_OrderDetails_ProductBrand" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_OrderDetails_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_PatientDisease_ProviderReferrals" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_Product_ProductBrand" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ProductBrand_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ProductCategory_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ProviderReferrals_ProviderReferrals" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ProviderReferrals_ProviderReferrals1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ProviderReferrals_ProviderReferrals2" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ProviderReferrals_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ProviderReferrals_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralAppointment_api_ProviderReferrals" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralTransactions_api_ProviderReferrals" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_Query_Pointsdetail_QueryPoints" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_vcpatid" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_RefAppTransactions_api_ReferralAppointment_api" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_RefAppTransactions_api_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_RefAppTransactions_api_ReferralEntityMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_RefAppTransactions_api_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_RefAppTransactions_api_ReferralStatusMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralAdded_api_ReferralAdded_api" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralAppointment_api_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralConnect_api_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralConnect_api_ReferralStatusMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralConnect_api_ReferralStatusMaster2" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralConnect_api_ReferralStatusMaster3" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralConnect_api_ReferralStatusMaster4" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralRequestDetail_api_ReferralRequestDetail_api1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralTransactions_api_ReferralEntityMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralTransactions_api_ReferralEntityMaster1" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralTransactions_api_ReferralStatusMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="Medripple_echModel.FK_ReferralTransactions_api_ReferralStatusMaster1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

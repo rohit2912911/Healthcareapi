@@ -1,0 +1,1488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA369048-AEB3-415C-9896-A8EA121CB588}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Healthcare_sql</RootNamespace>
+    <AssemblyName>Healthcare_sql</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Entity.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessEntity.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccessList.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccessMatrix.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccessResolution.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccessTier.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllCOnnectedPartners_api_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Allergy.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllGroupMessages_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllProviderConnReq_api_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_diagnostic.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_doc.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="App_hospital.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="autodiseasetodept_dp_demo_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="autodiseasetodept_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="autodisproc_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bankinfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankInfoContactDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankInfoTerm.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankWorkingHour.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BasicHealthDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bckinfo_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bkapp_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bkpg_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BLOG_T.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookAppointment.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bookappointment_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Category.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bot_table.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cachedisease_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="cardgen4feedbackpatient_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChatSummary_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CityMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CityMaster1.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ClinicalDoctor.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicalResearchDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="clinicalresearch_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicSpecialitiesMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cme_description.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectRelationMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectTransactions_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="consuproc_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="copyHospitalProcedure.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="copy_HospitalProcedures.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Corporate.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CorporateDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CountryMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Coupons4Pat.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentCondition.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DependentTbl.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dept_hosrating.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetailAccessCount.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="diagnosticCenterHealthCheckUpPlan.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticCentresContactDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticCentresDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticCentreService.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticCentreWorkingHour.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticServicesMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DIAGNOSTIC_TESTMASTER.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Diagtestname_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Disease.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="diseasedetaildocs_mvc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="diseasedetailhos_mvc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiseaseMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiseasesOther.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiseaseToDepartment.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DiseaseToDepartment1.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="disease_City_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="disease_mvc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="docdetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="docdetil_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="docdetl_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="docsecret.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="docspec_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorCategory.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsClinicTiming.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsDetail1.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsDetailaddr.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorSkill.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="doctorsubscription.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsVisit.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsVisitingDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsVisitingDetail1.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorWorkDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorWorkDetail1.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_Ref.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Drug.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ebook_Detail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EHRReportDocument.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emp_offer.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="example.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FellowPatientQuery.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fellowpatient_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Foremail_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getdoccty_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getgroupmem_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Getgrpconnreq_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gethosid_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetID_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Getprovconnreq_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getqrydocrply_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getQueries_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetQueryProvList1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetQueryProvList2_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetQueryProvList3_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetQueryProvList4_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getreferdoc_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getSubordinate_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getSubordinate_Test_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Group.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupConnection.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupConnectionTransaction.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupMember.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="groupmemMIS_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupMessage.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GroupMessageTransaction.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="healthexchange.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="healthnewscontent.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="home_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalConsultant.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalContactPersonDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hospitaldetail_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalDiagnostic.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalFacility.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalFacilityMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalIndoorService.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hospitalization.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalOffer.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalProcedure.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalsDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalsPackageDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalVisitingConsultant.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Immunization.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InsuCitylist.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancePlan.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceTiesUpMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InterventionMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ipaddress_table.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ipadd_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="job_board.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LabReport.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Medication.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Medrippl_ech.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medrippl_ech.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Medrippl_ech.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Medrippl_ech.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medrippl_ech.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberList_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageSummary_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_Table.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_GetHomeQueryForCommunty_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_GetQueryFromCommuntyRply1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion12_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion13_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion2_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion3_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion4_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion5_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion6_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion7_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_mydiscussion9_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_querydetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_QueryMyDisscussion11_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_QueryMyDisscussion1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_querypat1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_querypatientid_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_querypat_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_selectdoctordetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_topquery11_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_topquery1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_topquery2_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mob_topquery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Moreqrydisp_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MRCompanyHierarchy.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mydiscambdetail_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="mydiscussion_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Newallergy.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NewMessageSummary_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NewReferralSummary_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="newsletter_unsubscription.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ongoingcrese_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="opddemo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OpdTiming.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationContactPersonDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationFacility.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationInfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="otherservices_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="paid_specialist.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ParameterSetting.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerSiteDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="patfeedback_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PatientDisease.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Patientfeedback.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Speak.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Patinsudetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PDiscount.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PGFamialy.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PGIndividual.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="procedureDesconly_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProcedureMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Procedure_Master.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductBrand.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provider.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderDetail_api_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderPatientDetail_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderPersonnel.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProviderReferral.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProvidersHierarchy.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QryDisp_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="queryadminpatientlist_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryAreaMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPatientInfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPatientTreatmentCity.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPatient_AskQuery.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPatient_ReplyQuery.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPatToComReply.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPatToPatReply.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryPoint.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryProcMst.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QueryProviderInfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Query_Pointsdetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RefAppTransactions_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralAdded_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralAppointment_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralByMeMISDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralByMeMIS_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralByMe_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralByProvider_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralBystatuscount_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralConnect_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralDetailForward_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralDetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralEntityMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralRequestDetail_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralStatusMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralSummary_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralToMeMISDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralToMeMIS_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralToMe_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralToProvider_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralToStatusCount_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralTransactions_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="replydisp_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="replydisp_New_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportHierarchy_ReferralToMeMIS_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportHierarchy_ReferralToMe_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_AllProviderConnReq_api_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_AllReferrals_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_ConnEstablished_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_ConnReqSent_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_NSM_ReferralToMe_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_PatientDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="report_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_RM_ReferralToMe_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Report_UploadMembers_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="review_doctor.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="review_hospital.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sample.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SearchProduct.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="selecthoscon_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Shufflehomequery_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsMaster1.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialityClinicsCentreDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SpecializationMaster.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFillDoctorDetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFillDoctorWorkDetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spFillHospitalDetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_CommomeInternational_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_DependentUser_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_DiagnosticsRegistrationBasicDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_DoctorSearchByCityOrDepartment_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrAllergies_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrBasicHealthDeatils_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrDiseaseView_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrDoctorVisitView_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrHospitalView_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrLabReportUpdate_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrLabView_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrMeaseurements_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrMedicationUpdate_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EhrMedicationView_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_getcommon_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetDoctorDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetDoctorsDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetHospitalDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_GetHospitalDetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_HospitalRegistrationBasicDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_InputForm_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Login_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_PartnerDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_PatientDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_PrintReports_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_SpecialityInCity_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SuperSpecialityOPDTiming.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TabChkCity.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabchkdiagId.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TabchkDocid.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tabdocdetail_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabDoctorCategory.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabDoctorsClinicTiming.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabdoctorsdetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabDoctorSkill.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabDoctorsVisitingDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabDoctorWorkDetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tabQueryProviderInfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRelationMaster_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Bot.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_providerlogindetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="temphoscon.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempp.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempq.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempqpinfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempquerypatientinfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempquerypatientReply.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempquerypatientTreat.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempquerypatient_ask.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tempr.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestTable.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestTree_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tquerypatienttreatmentcity.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tquerypatient_askquery.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction_detail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Unused2used_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UploadMember_api.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="userallergy.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspdoctorskill_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_bankApproval_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_bankdeletion_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_Bank_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_BookAppointmentEmail1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_BookAppointmentEmail1_rm_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_BookAppointmentEmail_followupdate_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_BookAppointmentEmail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_disease_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_docinhos_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_doclist_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_EXPdisease1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_EXPdisease2_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_EXPdisease3_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_EXPdisease4_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_EXPdisease5_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnFillDeptt_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAddressDocDetails1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAddressDocDetails_Qry_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAddressDocDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAddressDocWork1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAddressDocWork_Qry_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAddressDocWork_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAreaConsultant1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAreaConsultant_Qry_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetAreaConsultant_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetDiagnostics_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetDoctorDetailForEmail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetDoctors_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetHelp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetPatientDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetQuery1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetQueryDetailsforDoc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetQuerySubForMail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fnGetServices_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_fortis_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetabtdementiaQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetAnsQueryByDisease_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetBlogQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetCitiesByCountry_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetClinicalCityAlphaHos_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetClinicalCityAlpha_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetClinicalCitytest_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetClinicalCity_demo_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetClinicalCity_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetCountry_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_getdiagID_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDoctorDetails_edit1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDoctorDetails_edit_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDoctorDetails_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDoctorResearchInterest_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridcitysQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridDocQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridhoscitysQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetgridhosotherQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetgridotherQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridpathcitysQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridpathothercitysQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHomeQueryForCommunty_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHomeQueryhome1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHomeQueryhome_int_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHomeQueryhome_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHomeQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_getHosid_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHospConCity_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GethospitalconsultantQuery1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GethospitalconsultantQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GethospitaldetailQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GethosQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetMdoctorsdetailQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetOrgInfo_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetOrgName_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_getotherHos_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetQueryFromCommuntyRply1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetQueryFromCommuntyRply_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetQueryProcedures_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetQueryTest_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetreviewDatalistQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetreviewhosDatalistQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSpechospitalconsultantsQuery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSpeciality_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSpecialization_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_Getsubdiscussion1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_Getsubdiscussion_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetUnAnsQueryByDisease_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospCity1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospCity_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospConsProc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospCons_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospDept1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospDept_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospProc1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_HospProc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_inddoc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_OrgforReg_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_patGridFellow_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_proccity_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_procdoccity_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_ProcNameCode_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_QueryDeptt_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_QueryMyDisscussion1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_QueryMyDisscussion2_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="USP_QueryMyDisscussion4_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_QueryPackage_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectDocDept_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_selectdoctordetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectHosForProc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectHospConsultant_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_selectHospDetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectHospital1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectHospital_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_selectHospProc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_selectProcDesc_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SpecializationMasterdetail_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_topquery1_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_topquery2_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_topquery3_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_topquery4_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_topquery5_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_topquery_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Validation_dp_Result.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="viewdoctor.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDoctorsdetail.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="view_Ansgridview.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View_QueryPackage.cs">
+      <DependentUpon>Medrippl_ech.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Medrippl_ech.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Medrippl_ech.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Medrippl_ech.edmx.diagram">
+      <DependentUpon>Medrippl_ech.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Medrippl_ech.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Medrippl_ech.edmx</DependentUpon>
+      <LastGenOutput>Medrippl_ech.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Medrippl_ech.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Medrippl_ech.edmx</DependentUpon>
+      <LastGenOutput>Medrippl_ech.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
